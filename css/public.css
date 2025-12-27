@@ -1,0 +1,111 @@
+/* 全局样式重置 */
+* {
+    list-style: none; /* 去除列表符号 */
+    text-decoration: none; /* 去除文本下划线 */
+    margin: 0; /* 元素外边距设为0 */
+    padding: 0; /* 元素内边距设为0 */
+  }
+    
+  /* 导航栏样式 */
+  .nav {
+    width: 1200px; /* 导航栏宽度 */
+    height: 70px; /* 导航栏高度 */
+    position: relative; /* 相对定位 */
+    top: 0; /* 顶部距离 */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    border-radius: 10px; /* 边框圆角 */
+    background-color: #fff; /* 背景颜色 */
+    margin: 0 auto; /* 水平居中 */
+    z-index: 999; /* 层叠顺序 */
+    transition: top 0.3s ease-in-out; /* 顶部位置过渡效果 */
+  }
+  
+  /* 固定导航栏的样式 */
+  .nav.nav-fixed {
+    position: fixed; /* 固定定位 */
+    top: 0; /* 顶部距离 */
+    width: 100%; /* 宽度为100% */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    border-radius: 10px; /* 边框圆角 */
+  }
+  
+  /* 导航栏列表样式 */
+  .nav ul {
+    width: 100%; /* 宽度为100% */
+    height: 100%; /* 高度为100% */
+    display: flex; /* 弹性盒布局 */
+    align-items: center; /* 垂直居中 */
+    right: 5%; /* 右侧距离 */
+  }
+  
+  /* 导航栏动态下划线 */
+  .nav ul .nav-box {
+    position: absolute; /* 绝对定位 */
+    bottom: 0; /* 底部距离 */
+    left: 0; /* 左侧距离 */
+    width: calc((100% / 6)*1); /* 宽度为导航栏总宽度的六分之一 */
+    height: 10px; /* 高度 */
+    border-radius: 2px; /* 边框圆角 */
+    transition: .5s; /* 过渡效果 */
+  }
+  
+  /* 导航栏列表项样式 */
+  .nav ul li {
+    width: 100%; /* 宽度为100% */
+    text-align: center; /* 文字居中 */
+  }
+  
+  /* 导航栏链接样式 */
+  .nav ul li a {
+    color: rgb(70, 100, 180); /* 字体颜色 */
+    font: 100 30px '优设标题黑'; /* 字体样式 */
+    display: block; /* 块级显示 */
+    width: 100%; /* 宽度为100% */
+    height: 100%; /* 高度为100% */
+    line-height: 70px; /* 行高 */
+  }
+  
+  .nav ul li:nth-child(1):hover~.nav-box {
+    left: calc(100% / 6 *0);
+    background-color: rgb(250, 190, 250);
+}
+
+.nav ul li:nth-child(2):hover~.nav-box {
+    left: calc(100% / 6 *1);
+    background-color: red;
+}
+
+.nav ul li:nth-child(3):hover~.nav-box {
+    left: calc(100% / 6 *2);
+    background-color: #d18df8;
+}
+
+.nav ul li:nth-child(4):hover~.nav-box {
+    left: calc(100% / 6 *3);
+    background-color: #ffb1b1;
+}
+
+.nav ul li:nth-child(5):hover~.nav-box {
+    left: calc(100% / 6 *4);
+    background-color: #8da1f8;
+}
+
+.nav ul li:nth-child(6):hover~.nav-box {
+    left: calc(100% / 6 *5);
+    background-color: #7df88e;
+}
+  
+  /* 页脚样式 */
+  footer {
+    height: 150px; /* 高度 */
+    background-color: #000000ad; /* 背景颜色，半透明黑色 */
+    display: flex; /* 弹性盒布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    color: #868484; /* 字体颜色 */
+    font-size: 20px; /* 字体大小 */
+    font-family: Agency FB; /* 字体 */
+    position: relative; /* 相对定位 */
+    top: 350px; /* 顶部距离 */
+  }
+  

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置字符编码为UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 兼容IE浏览器 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 视口设置，适应移动设备 -->
+    <title>夏目友人帐--登陆界面</title>
+    <!-- 页面标题 -->
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- 引入外部样式表 -->
+</head>
+
+<body>
+    <!-- 页面内容 -->
+    <div class="shell">
+        <!-- 外部容器 -->
+        <div id="img-box">
+            <!-- 图片容器 -->
+            <img src="../images/login/login.png" alt="">
+            <!-- 登陆页面图片 -->
+        </div>
+        <form action="" method="post" onsubmit="return false;">
+            <!-- 表单，使用 JavaScript 处理提交，阻止默认提交行为 -->
+            <div id="boxin">
+                <!-- 表单内部容器 -->
+                <div id="welcome-lines">
+                    <!-- 欢迎信息容器 -->
+                    <div id="w-line-1">Hi 暴躁小神仙</div>
+                    <!-- 欢迎语第一行 -->
+                    <div id="w-line-2">Welcome Back</div>
+                    <!-- 欢迎语第二行 -->
+                </div>
+                <div id="input-area">
+                    <!-- 输入区域容器 -->
+                    <div class="f-inp">
+                        <!-- 输入框容器 -->
+                        <input type="text" id="username" placeholder="Email Address">
+                        <!-- 用户名输入框，带有占位符 -->
+                    </div>
+                    <div class="f-inp">
+                        <!-- 输入框容器 -->
+                        <input type="password" id="password" placeholder="Password">
+                        <!-- 密码输入框，带有占位符 -->
+                    </div>
+                </div>
+                <div id="message-area">
+                    <!-- 消息显示区域 -->
+                    <p id="message"></p>
+                    <!-- 显示消息的段落 -->
+                </div>
+                <div id="submit-button-cvr">
+                    <!-- 登陆按钮容器 -->
+                    <button type="submit" id="login-button">登陆</button>
+                    <!-- 登陆按钮 -->
+                </div>
+                <div id="submit-button-cvr2">
+                    <!-- 注册按钮容器 -->
+                    <button type="submit" id="register-button">注册</button>
+                    <!-- 注册按钮 -->
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        // 获取按钮并绑定点击事件处理函数
+        document.getElementById('login-button').onclick = login;
+        document.getElementById('register-button').onclick = register;
+
+        // 注册函数
+        function register() {
+            // 获取输入的用户名和密码
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // 检查用户名和密码是否为空
+            if (username && password) {
+                // 将用户名和密码存储到本地存储
+                localStorage.setItem(username, password);
+                // 显示成功消息
+                displayMessage('注册成功!', 'success');
+            } else {
+                // 显示错误消息
+                displayMessage('账号或密码为空.', 'error');
+            }
+        }
+
+        // 登陆函数
+        function login() {
+            // 获取输入的用户名和密码
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // 检查用户名和密码是否为空
+            if (!username || !password) {
+                displayMessage('账号或密码为空.', 'error');
+                return;
+            }
+
+            // 从本地存储中获取存储的密码
+            const storedPassword = localStorage.getItem(username);
+
+            // 检查用户名是否存在
+            if (storedPassword === null) {
+                displayMessage('账户不存在，请检查.', 'error');
+            } else if (storedPassword === password) {
+                // 如果用户名和密码匹配，显示成功消息并跳转到主页面
+                displayMessage('登陆成功，欢迎!', 'success');
+                window.location.href = "main.html";
+            } else {
+                // 如果密码错误，显示错误消息
+                displayMessage('账号或密码有误，请检查.', 'error');
+            }
+        }
+
+        // 显示消息函数
+        function displayMessage(message, type) {
+            // 获取消息显示元素
+            const messageElement = document.getElementById('message');
+            // 设置消息文本
+            messageElement.textContent = message;
+            // 根据消息类型设置消息颜色
+            messageElement.style.color = type === 'success' ? 'green' : 'red';
+        }
+    </script>
+</body>
+
+</html>

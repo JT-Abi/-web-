@@ -1,0 +1,163 @@
+/* 设置背景图片，不重复，确保图片覆盖整个背景，固定背景使其在滚动时不动，隐藏垂直滚动条 */
+body {
+  background-image: url("../images/about_me/背景图.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: hidden;
+}
+
+/* 确保所有元素的内边距和边框大小包含在总宽度和高度中 */
+* {
+  box-sizing: border-box;
+}
+
+/* 样式设置容器div占满整个宽度，最小高度为视口高度，并在垂直和水平方向上居中内容 */
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 为.testimonial类设置最大宽度和自动外边距 */
+.testimonial{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* 为testimonial文本框设置半透明背景，白色文字，圆角边框和阴影 */
+.testimonial-text{
+  background: rgba(44, 51, 51, 0.5);
+  color: #fff;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 设置.user-text的样式，包括大小、位置，初始状态为隐藏，带有过渡效果 */
+.user-text{
+  width: 80%;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  transition: all 0.5s ease-in;
+}
+
+/* 为.user-text添加额外的样式，包括字体大小和边距 */
+.user-text {
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+/* 设置.user-text中span元素的样式，包括字体大小、边距和字重 */
+.user-text span{
+  display: block;
+  font-size: 13px;
+  margin-top: 70px;
+  font-weight: 500;
+}
+
+/* 定义一个使用本地文件的自定义字体 */
+@font-face {
+  font-family: "华文行楷";
+  src: url("../STXINGKA.TTF") format("truetype");
+}
+
+/* 为.c1类的元素设置样式，包括字体大小、家族和悬停效果 */
+.c1 {
+  font-size: 150%;
+  font-family: 华文行楷;
+}
+.c1:hover {
+  color: rgb(218, 135, 135);
+  text-shadow: 0px 0px 10px rgb(158, 111, 245);
+}
+
+/* 为p元素设置字体大小、家族和悬停效果 */
+p{
+  font-size: 110%;
+  font-family: 华文行楷;
+}
+
+p:hover{
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgb(158, 111, 245);
+}
+
+/* 为.name类设置字体大小、样式和颜色 */
+.name {
+  font-size: 20px;
+  font-style: italic;
+  color: red;
+}
+
+/* 为.why下的p元素设置字体大小、家族、颜色、文本对齐和缩进 */
+.why p{
+  font-size: 90%;
+  font-family: 华文行楷;
+  color: #ffffff;
+  text-align: left;
+  text-indent: 2em;
+}
+
+/* 为h1元素设置字体大小、颜色和家族 */
+h1{
+  font-size: 120%;
+  color: #fff;
+  font-family: 华文行楷;
+}
+
+/* 设置.testimonial-pic的边距和排列方式 */
+.testimonial-pic{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 设置.user-pic的样式，包括大小、内边距、圆角、边距、光标、背景大小和位置、对象适应方式和过渡效果 */
+.user-pic{
+  width: 65px;
+  height: 65px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  background-size: auto;
+  background-position: center;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+/* 当.user-text为active-text时显示，并带有向上移动的动画效果 */
+.user-text.active-text{
+  display: block;
+  animation: moveup 0.5s linear forwards;
+}
+
+/* 当.user-pic为active-pic时改变大小和边框样式 */
+.user-pic.active-pic{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #2c3333;
+}
+
+/* 定义moveup动画，从margin-top 10%到0 */
+@keyframes moveup {
+  0%{
+    margin-top: 10%;
+  }
+  100%{
+    margin-top: 0px;
+  }
+}

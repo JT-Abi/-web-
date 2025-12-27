@@ -1,0 +1,128 @@
+/* 重置所有HTML元素的内边距和外边距为0 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 设置body元素的样式 */
+body {
+    background-image: url("../images/main/背景1.jpg"); /* 背景图片 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+    background-size: cover; /* 背景图片覆盖整个元素 */
+    background-attachment: fixed; /* 背景图片固定不动 */
+    display: flex; /* 使用Flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100vh; /* 高度为视口的100% */
+    overflow: hidden; /* 隐藏溢出的内容 */
+}
+
+/* 设置类为title的元素的样式 */
+.title {
+    writing-mode: vertical-rl; /* 文字垂直排列，从右到左 */
+    font-size: 48px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    color: #ee9ad6; /* 字体颜色 */
+    font-family: "楷体", KaiTi, serif; /* 字体族 */
+    background-color: rgba(0, 0, 0, 0.5); /* 背景颜色，半透明 */
+}
+
+/* 设置类为shell的元素的样式 */
+.shell{
+    width: 90%; /* 宽度为父元素的90% */
+    height: 700px; /* 高度为700px */
+    display: flex; /* 使用Flex布局 */
+}
+
+/* 设置类为box的元素的样式 */
+.box{
+    flex: 1; /* Flex项的放大比例 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+    transition: .5s; /* 过渡效果，持续时间0.5秒 */
+    margin: 0 20px; /* 外边距 */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5); /* 盒子阴影 */
+    border-radius: 20px; /* 边框圆角 */
+    border: 10px solid #fff; /* 边框颜色 */
+    background-color: #fff; /* 背景颜色 */
+}
+
+/* 设置类为box的子元素img的样式 */
+.box>img{
+    width: 100%; /* 宽度为100% */
+    height: 85%; /* 高度为85% */
+    object-fit: cover; /* 图片填充方式 */
+    transition: .5s; /* 过渡效果，持续时间0.5秒 */
+}
+
+/* 设置类为box的子元素span的样式 */
+.box>span{
+    font: 200 45px '优设标题黑'; /* 字体样式 */
+    text-align: center; /* 文字居中 */
+    height: 15%; /* 高度为15% */
+    display: flex; /* 使用Flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+/* 定义类为box的元素在hover状态下的样式 */
+.box:hover{
+    flex-basis: 40%; /* Flex基准值 */
+}
+.box:hover>img{
+    width: 100%; /* 宽度为100% */
+    height: 100%; /* 高度为100% */
+}
+
+/* 设置ID为show2的元素的样式 */
+#show2 {
+    position: absolute; /* 绝对定位 */
+    right: -95%; /* 右边距为-95% */
+    top: 30%; /* 顶部距离为30% */
+    z-index: 999; /* 层叠顺序 */
+    width: 100vw; /* 宽度为视口的100% */
+    height: 100px; /* 高度为100px */
+    transition: 0.5s; /* 过渡效果，持续时间0.5秒 */
+}
+
+#show2:hover {
+    right: -75%; /* hover状态下的右边距 */
+}
+
+/* 重复定义，与前面的.shell相同，可能是冗余代码 */
+.shell {
+    display: flex;
+}
+
+/* 重复定义，与前面的.box相同，增加了相对定位 */
+.box {
+    position: relative;
+    margin: 10px;
+}
+
+/* 设置类为mask的元素的样式 */
+.box .mask {
+    position: absolute; /* 绝对定位 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 宽度为100% */
+    height: 100%; /* 高度为100% */
+    background-color: rgba(0, 0, 0, 0.6); /* 背景颜色，半透明 */
+    opacity: 0; /* 透明度 */
+    display: flex; /* 使用Flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    transition: opacity 0.3s ease; /* 过渡效果，透明度变化 */
+}
+
+/* 定义类为box的子元素mask在hover状态下的样式 */
+.box:hover .mask {
+    opacity: 1; /* 透明度为1，完全不透明 */
+}
+
+/* 设置类为mask的子元素span的样式 */
+.box .mask span {
+    color: #fff; /* 文字颜色 */
+    font-size: 60px; /* 字体大小 */
+    font-family: "楷体", KaiTi, serif; /* 字体族 */
+    opacity: 1; /* 透明度为1，完全不透明 */
+}

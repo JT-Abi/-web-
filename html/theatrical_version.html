@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结缘空蝉</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/theatrical_version.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="main.html">首页</a></li>
+                <li><a href="anime_plot.html">动漫介绍</a></li>
+                <li><a href="yokai_list.html">妖怪名单</a></li>
+                <li><a href="theatrical_version.html">剧场版</a></li>
+                <li><a href="cultural.html">背后的文化</a></li>
+                <li><a href="about_me.html">关于</a></li>
+                <div class="nav-box"></div>
+            </ul>
+        </div>
+    </header>
+    <script>
+        // JavaScript代码
+        window.addEventListener('scroll', function () {
+            let nav = document.querySelector('.nav');
+            let navHeight = nav.offsetHeight;
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > navHeight) {
+                nav.classList.add('nav-fixed');
+            } else {
+                nav.classList.remove('nav-fixed');
+            }
+        });
+    </script>
+
+    <!-- 轮播图 -->
+    <div class="shell">
+        <ui class="images">
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+        </ui>
+        <ui class="min">
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+        </ui>
+        <div class="button">
+            <div class="button-left">
+            </div>
+            <div class="button-right">></div>
+        </div>
+    </div>
+    <script src="../js/ther.js"></script>
+
+    <!--业内导航图-->
+    <div class="container">
+        <!--人物-->
+        <div class="pic">
+            <a href="#section1">
+                <div class="box" id="b1">
+                    <div class="text">
+                        <h2> </h2><br>
+                        <h2>关于人物</h2>
+                        <div class="intext">
+                            <p>
+                                每个人物生活一角的展示</p>
+                            <p>不断治愈银幕背后的我们
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="../images/theatrical/1.jpg" alt="图片描述">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- 主题 -->
+        <div class="pic">
+            <a href="#section2">
+                <div class="box" id="b2">
+                    <div class="text">
+                        <h2> </h2><br>
+                        <h2>关于主题</h2>
+                        <div class="intext">
+                            <p>
+                                治愈与温柔</p>
+                            <p>孤单与疏离
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="../images/theatrical/2.jpg" alt="图片描述">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- 画面 -->
+        <div class="pic">
+            <a href="#section3">
+                <div class="box" id="b3">
+                    <div class="text">
+                        <h2> </h2><br>
+                        <h2>关于画面</h2>
+                        <div class="intext">
+                            <p>
+                                无处不在的构图审美
+                            </p>
+                            <p>色彩与光线恰到好处
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="../images/theatrical/3.jpg" alt="图片描述">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="wen">
+        <div class="wenin">
+            <div id="section1" class="section">
+                <div class="content">
+                    <h1>剧场版《结缘空蝉》多角度赏析</h1>
+                    <br><br>
+                    <h2>一、人物：每个人物散发出来的温暖，治愈了屏幕前的我们</h2>
+                    <br>
+                    <p>在这部电影中，作者绿川幸对每个人物都有着鲜明地刻画，对人物形象恰到好处地描绘，使得他们都有独特的人物特征。温柔的夏目，即使自己力量弱小，但仍然想要去照顾别人。口头上不饶人的喵咪斑，却一直陪伴在夏目的身边。看起来吓人的妖怪，但是深入接触，你也会发现妖怪也是那么的温柔，有时甚至会比人更加脆弱。
+                    </p>
+                    <br>
+                    <p>电影的开头就介绍了夏目贵志的情况：我从小就能看到一些奇怪的东西，不过其他人好像看不到，那些东西，应该就是所谓的妖怪吧。</p>
+                    <br>
+                    <p>夏目从小就失去父母，被亲戚当做皮球一样踢来踢去，养成了孤单敏感的性格。因为夏目能看到妖怪，便被别的同学认为是不正常的。夏目脆弱，敏感，没有朋友，但是后来却变成了<strong>一个无限温柔的人，一个有勇气，有担当，时刻为别人着想的人</strong>。即使是在面对妖怪的时候夏目也从来没有害怕过，因为他的朋友和猫咪老师都在他的身边。
+                    </p>
+                    <br>
+                    <p>猫咪斑，是一只本来只想要友人帐的妖怪，因为拿到友人帐就能统领树林里的妖怪。但是他却一直留在了夏目的身边，陪伴着夏目。</p>
+                    <br>
+                    <p>夏目也把猫咪斑当做帮助自己的老师，从而叫他“猫咪老师”。猫咪斑性格是十足的刀子嘴豆腐心，即使头口头上不饶人，但每次在最后关头，他总会对夏目出现在夏目身边，出手相救。</p>
+                </div>
+                <div class="image">
+                    <img src="../images/theatrical/1.1.jpg" alt="图片1描述">
+                </div>
+                <div class="content">
+                    <br>
+                    <p>夏目和猫咪斑像极了我们身边的人，那个口头上总是说我们有万般不好的人，那个经常和我们吵架拌嘴的人，那个每次在重要时刻都能够帮助我们的人，就像猫咪斑一样，给予我们无限的温柔。</p>
+                    <br>
+                    <p>我们每次想起来时，都能够会心一笑的人，就出现在我们的生命里，支持帮助着我们。我想这就是电影想要传递给我们的价值吧，让我们能够联想到身边的人，从而珍惜他们，珍惜彼此之间的情谊。</p>
+                    <br>
+                    <p>这部电影当中除了夏目和猫咪斑，还有夏目玲子，藤原夫妇和妖怪。玲子放弃与人类的交往，和妖怪比赛来获得他们的名字，以此产生与世界的联系。</p>
+                    <br>
+                    <p>滋叔叔和塔子阿姨在夏目失去父母后，仍然愿意收留夏目，把夏目当做自己的孩子般照顾，给予夏目亲人般的爱。<strong>妖怪原来也是一群寂寞的生物，但当他们和人产生羁绊，也会无限的温柔。</strong>
+                    </p>
+                    <br>
+                    <p><strong>电影刻画的人物有丰富细腻的情感，能够让我们快速联系到自己身边的人。夏目就像邻家的小孩，猫咪斑就像自家的宠物，而玲子和妖怪，就像生活中那些内向，不爱说话的人，即使内心有万般柔情，也不善于表达。人的一生，就是在与别人的羁绊和爱中不断成长，不断成熟。电影中的人物给予我们启示和思考，让我们开始思考生命中的那些人和事。</strong>
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../images/theatrical/1.2.jpg">
+                </div>
+            </div>
+
+            <div id="section2" class="section">
+                <div class="content">
+                    <h2>二、电影独特的主题：治愈与温柔，孤单与疏离</h2>
+                    <p>之前我去电影院看电影的时候，看到电影海报上写的是“年度治愈佳作”“不再让你悲伤”，“十年夏目，温暖如初”。从电影海报的文案上可以看出来，电影主打的就是治愈与温柔。</p>
+                    <p>从电影整个故事结构和剧情入手，夏目和猫咪斑的情感羁绊，每日吵架拌嘴，彼此需要时就出现在对方身边。</p>
+                    <p>夏目的同学们，在夏目生病住院时，全部赶到医院中看望夏目，口中说着“怎么这么不小心啊”，言语之中透漏着的都是对夏目的关心与照顾。寂寞的妖怪们，在与夏目一次次的交流中，变成了彼此需要的朋友，有什么开心或烦恼的事都可以找夏目述说。
+                    </p>
+                    <p>作者绿川幸将生活中琐碎的小事描绘的无比温柔。曾经看过一个对绿川幸作品的评论：<strong>善于在悲伤的背景与环境中描绘出一些温暖而琐碎的情感故事，无论怎么样，很多淡然随意的小细节也在她的画笔下呈现出不同的光彩</strong>。
+                    </p>
+                    <p>在我看来，作者善于捕捉生活中的细节与温暖人心的小片段，才可以把人物，把主题刻画地真实又有温情。</p>
+                    <p>因为真实的故事，往往能够打动读者，引发共鸣，观众在观看电影的时候，就能够联系现实，回忆起自己身边那些感人的故事，这就是真实带来的价值。</p>
+                    <p>在音乐《只要有想见的人，就不是孤身一人》评论中，有个高赞评论：<strong>有感动，有失落，有温暖，有悲伤，但都是温柔的心跳。</strong></p>
+                    <p>夏目曾经说：我想成为一个温柔的人，因为曾被温柔的人那样对待，深深了解那种被温柔相待的感觉。</p>
+                </div>
+                <div class="image">
+                    <img src="../images/theatrical/1.3.jpg">
+                </div>
+                <div>
+                    <p>温柔是这部电影最大的主题，因为夏目曾经被别人温柔地对待，所以也会在心底里想要成为那样的人。人的内心一旦有了想法，就会想要往某个方面努力。最终变成自己期待的人。夏目也变成了我们心目中温柔的人，带给我们温暖与感动。
+                    </p>
+                    <p>在我看来，除了温柔与治愈之外，这部电影还有另外一层主题孤单与疏离。在治愈与温柔中包含的孤单与疏离感。为什么温柔与治愈能够打动人心，是因为内心的缺失。</p>
+                    <p>人与人，人与妖，其实都是孤独的，正是因为这种孤独，所以才会需要与现实世界产生羁绊，比如亲情，友情和爱情。</p>
+                    <p>夏目的外婆因为能看到妖怪，所以被同龄人疏远；夏目小小时候也因为能看到妖怪而不被人理解；妖怪总是因为人世间的一点点羁绊，就迟迟不肯离开。</p>
+                    <p>他们都是孤独的，所以更加想要从别人身上汲取温柔，当被温柔地对待之后，又会想要温柔地对待别人。</p>
+                    <p>就像电影的名字“结缘空蝉”一般，“结缘”代表着相遇与相知，这两者便是一种缘分。在《夏目友人帐》剧场版的官方声优见面会上，田沼的声优对标题做出了解释，“空蝉”就是蝉脱下来的空壳。他对此补充道：人类就像空蝉一样虚幻短暂。
+                    </p>
+                    <p>蝉在的蜕变之前，会在自己的蛹中积累力量，当蝉从蛹中破壳而出时，就留下了空空的一个壳。空壳既代表之前的存在，也代表了如今的分离，有种短暂分离，无法抓住之感。</p>
+                    <p>容莉枝和椋雄这对母子的故事，正是对“结缘空蝉”最好的解释，即使相互陪伴了八年，最后仍不得不分离。椋雄带着过去的幸福和回忆继续走自己的路，这些美好的回忆对容莉枝和椋雄来说，无一不是另外一种孤独与温柔。
+                    </p>
+                    <p>人的一生，短短几十载，在这些时光中出现的人，发生的事，会留存在我们的回忆当中。当时光不断前行，我们是否会忘记之前一直珍惜的人和事，就好像他们真的没有存在过。</p>
+                    <p>对于这个问题，我们不得而知，因为人的记忆是有限的，而且会随着时间变得越来越模糊。<strong>所以我们应该从此时开始，珍惜身边的人，珍惜他们与我们在一起的美好时光，尽全力带给他们幸福与感动。</strong>
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../images/theatrical/1.4.jpg">
+                </div>
+            </div>
+
+            <div id="section3" class="section">
+                <div class="content">
+                    <h2>三、画面：无处不在的构图审美，色彩与光线的恰到好处</h2>
+                    <p>相信看过这部电影的朋友，对画面的最大感受就是清新唯美，干净清爽。每一帧的画面都可以截取下来当做壁纸。</p>
+                    <p>这部电影的主色调是绿色，翠绿的田野，清澈的河流，常绿的远山，茂密的森林，房屋里的绿植等，全部是用绿色来展现的，给人一种清新大自然的观感。</p>
+                    <p>作者绿川幸说：“光要打在茂盛的树丛上，绿色的树荫里住着恶作剧的精灵。光要从云层里透出来，铺在溪水和鹅卵石上。光要标志着每一条自行车骑过的小路，光要守护炊烟袅袅的村庄。要有树，绿色的大片的树，树边有供祠，大的小的有名的无名的神灵都得到平等的尊重。要有纯净的天空像海水一样流动，要有性格饱满的妖怪嬉笑怒骂，要有另一个平行的空间来盛下生命原始的脉动”。
+                    </p>
+                    <p>从作者的这番话来看，《夏目友人帐》剧场版完全按照了他的构图审美与设定。每一幕的画面上，都有着明亮的光，光从天空照射到森林，照射到人类与妖怪身上，使得每个人物身上都有种淡淡的光，柔美而不刺眼。
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../images/theatrical/1.6.jpg">
+                </div>
+                <p>光线照射到深林的每一颗绿树上，每一颗树的叶子上，有些叶子反射太阳的光，熠熠生辉。</p>
+                <p>这些场景不由得让人产生无限遐想，在森林中都住着什么样的人，或者什么样的妖怪。</p>
+                <p>绿色代表着新生和生命，代表着希望与和平。绿色不是冷色也不是暖色，而是一种中性色，是由黄蓝两种颜色糅合而成，在整部电影中承担了主要的色调。</p>
+                <p>远山，树林，叶子，草地，这些景物的存在，使得影片有种舒适自然不浮夸的观感，就像置身于大自然当中，观众可以随着画面感受到微风吹过树林，吹过草地，从河流上划过，在人物的身旁舞动。</p>
+                <div class="image">
+                    <img src="../images/theatrical/1.7.jpg">
+                </div>
+                <p>夏目和猫咪斑永远是一身白色，白色代表着单纯，简单与轻松。白色不像黑色那么压抑，在日漫的小清新风格中，人物经常穿着一身白色的校服，给人一种亲切阳光的男子形象。</p>
+                <p>夏目的淡橘色头发，也与他的温柔性格相匹配，一眼看过去，就给人淡淡的温暖。</p>
+                <p>作者和导演通过色彩想呈现给我们的是清新温柔的治愈风，与人物性格相匹配，同时也想通过绿色呼吁人们爱护自然，保护自然，表达人类与自然和谐共处的理念。</p>
+                <p>结语：《夏目友人帐：结缘空蝉》之所以被人喜爱，除了剧中的人物与画面，更重要的是这部影片的主题，温柔和治愈，以及在这个主题下所隐藏的孤单与疏离，让人们意识到珍惜的重要性。</p>
+                <p>珍惜身边爱自己的人，珍惜身边保护自己的人，带着他们带给自己的感动和幸福逐渐成长起来。</p>
+
+            </div>
+        </div>
+    </div>
+    
+    <img src="../images/theatrical/返回首页.png" onclick="scrollTopFunction()" alt="返回顶部" class="top-button">
+
+    <script>
+        // 当页面滚动时显示或隐藏返回顶部按钮
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    
+        function scrollFunction() {
+            var myButton = document.querySelector('.top-button');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                myButton.style.display = 'block';
+            } else {
+                myButton.style.display = 'none';
+            }
+        }
+    
+        // 点击图片时回到页面顶部
+        function scrollTopFunction() {
+            document.body.scrollTop = 0; // 兼容旧版浏览器
+            document.documentElement.scrollTop = 0; // 兼容现代浏览器
+        }
+    </script>
+    
+    
+    
+    
+    
+    <footer>
+        This is a very common front-end web page, my first work. <br>
+        由XXX制作，于XXX完成 <br>
+        e-mail：1234567890@qq.com
+    </footer>
+</body>
+
+</html>

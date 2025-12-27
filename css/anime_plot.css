@@ -1,0 +1,391 @@
+/* 设置整个页面的背景颜色为淡绿色 */
+body {
+  background-color: #42ae98;
+}
+
+/* 设置页面头部的背景颜色为深蓝色 */
+header {
+  background-color: #18647e;
+}
+
+/* 剧情简介模块的样式设置 */
+.jianjie {
+  width: 100%;
+  /* 宽度设置为100%，占满整个容器宽度 */
+  background-attachment: fixed;
+  /* 背景图片固定，不随滚动条移动 */
+  height: 800px;
+  /* 高度设置为800像素 */
+  background-image: url(../images/anime_llot/水背景.jpg);
+  /* 设置背景图片 */
+  margin: 0px auto;
+  /* 上下边距为0，左右自动（居中） */
+}
+
+/* 剧情简介内容的样式 */
+.jianjie_content {
+  width: 70%;
+  /* 宽度为父容器的70% */
+  height: 800px;
+  /* 高度与.jianjie一致 */
+  text-align: center;
+  /* 文字居中对齐 */
+  font-size: 20px;
+  /* 字体大小为20像素 */
+  line-height: 90px;
+  /* 行高为90像素 */
+  color: #ffffff;
+  /* 字体颜色为白色 */
+  font-family: 方正姚体;
+  /* 使用“方正姚体”字体 */
+  text-shadow: rgba(0, 0, 0, 0.714) 5px 5px 5px;
+  /* 文字阴影效果 */
+  margin: auto;
+  /* 自动外边距（水平居中） */
+}
+
+.jianjie_content span {
+  font-weight: bold;
+  /* 加粗字体 */
+  font-size: 50px;
+  /* 字体大小为50像素 */
+}
+
+.jianjie_content button {
+  border: 2px solid black;
+  /* 黑色实线边框，宽度为2像素 */
+  background: #ffffff;
+  /* 背景颜色为白色 */
+  border-radius: 15px;
+  /* 边框圆角为15像素 */
+  width: 200px;
+  /* 宽度为200像素 */
+  height: 50px;
+  /* 高度为50像素 */
+}
+
+.jianjie_content button a {
+  color: rgba(0, 0, 0, 0.57);
+  /* 字体颜色为半透明黑色 */
+  font-size: 30px;
+  /* 字体大小为30像素 */
+  font-family: 华文琥珀;
+  /* 使用“华文琥珀”字体 */
+  text-decoration: none;
+  /* 去除下划线 */
+}
+
+.jianjie_content button:hover {
+  transform: scale(1.1);
+  /* 鼠标悬停时按钮放大1.1倍 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* 按钮阴影效果 */
+}
+
+/* 视频和其他效果展示模块的样式 */
+.video {
+  display: flex;
+  /* 使用弹性盒模型 */
+  align-items: center;
+  /* 子项在垂直方向上居中对齐 */
+  height: 460px;
+  /* 高度为460像素 */
+  margin: 0 auto;
+  /* 上下边距为0，左右自动（居中） */
+  background-attachment: fixed;
+  /* 背景图片固定 */
+  background-image: url(../images/anime_llot/背景02.jpg);
+  /* 设置背景图片 */
+}
+
+.video .video_left {
+  flex: 1;
+  /* 弹性盒子中的子项，占据剩余空间的比例为1 */
+}
+
+.video .video_left video {
+  width: 90%;
+  /* 视频宽度为父容器的90% */
+  box-shadow: 0px 20px 50px #555555;
+  /* 视频阴影效果 */
+  border-radius: 25px;
+  /* 视频边框圆角为25像*/
+
+}
+
+/* 视频区域右侧样式 */
+.video .video_rigth {
+  flex: 1;
+  /* 使元素具有弹性布局，占据剩余空间 */
+  width: 50%;
+  /* 元素宽度为父元素的50% */
+  height: 90%;
+  /* 元素高度为父元素的90% */
+}
+
+/* 视频区域右侧的列表样式 */
+.video .video_rigth ul {
+  display: flex;
+  /* 使用弹性盒布局 */
+  flex-wrap: wrap;
+  /* 允许项目换行 */
+  align-items: center;
+  /* 垂直居中对齐项目 */
+}
+
+/* 列表项的基本样式 */
+.video .video_rigth ul li {
+  width: 27%;
+  /* 每个列表项宽度为27% */
+  height: 50%;
+  /* 每个列表项高度为50% */
+  padding: 15px;
+  /* 内边距为15px */
+  transition: 0.5s;
+  /* 过渡动画持续0.5秒 */
+}
+
+/* 鼠标悬停在列表项上时的样式 */
+.video .video_rigth ul li:hover {
+  width: 30%;
+  /* 悬停时宽度增加到30% */
+}
+
+/* 列表项中图片的样式 */
+.video .video_rigth ul li img {
+  margin: 0 0 -1px -1px;
+  /* 边距设置，轻微调整图片位置 */
+  width: 100%;
+  /* 图片宽度为100% */
+  border-radius: 5px;
+  /* 图片边角的圆角半径 */
+  border: white 5px solid;
+  /* 图片边框为白色，宽度为5px */
+  box-shadow: 0px 10px 50px #555555;
+  /* 图片的阴影效果 */
+}
+
+/* 人物介绍模块的整体样式 */
+.shell {
+  position: relative;
+  /* 相对定位 */
+  top: 0;
+  /* 顶部对齐 */
+  left: 0;
+  /* 左侧对齐 */
+  width: 100%;
+  /* 宽度为100% */
+  height: 104vh;
+  /* 高度为视口高度的104% */
+  background-color: #000;
+  /* 背景颜色为黑色 */
+  overflow: hidden;
+  /* 隐藏溢出的内容 */
+}
+
+/* 个人页面的基本样式 */
+.page {
+  transform: translateX(-110%);
+  /* 初始状态向左移动110% */
+  position: absolute;
+  /* 绝对定位 */
+  width: 50%;
+  /* 宽度为50% */
+  height: 100%;
+  /* 高度为100% */
+  transition: .5s;
+  /* 过渡动画持续0.5秒 */
+  background-size: cover;
+  /* 背景图片覆盖整个元素 */
+}
+
+/* 按钮样式 */
+.button {
+  display: block;
+  /* 块级显示 */
+  width: 10%;
+  /* 宽度为10% */
+  color: #fff;
+  /* 文字颜色为白色 */
+  font-size: 30px;
+  /* 字体大小为30px */
+  border-bottom: #fff solid 4px;
+  /* 下边框为白色，宽度为4px */
+  text-align: center;
+  /* 文字居中对齐 */
+  position: absolute;
+  /* 绝对定位 */
+  bottom: 10px;
+  /* 距底部10px */
+  margin: 50px;
+  /* 外边距为50px */
+  left: calc(50% + (var(--i)*17%));
+  /* 左侧定位，基于自定义属性--i计算 */
+  z-index: 999;
+  /* z-index设置为999，确保在最上层 */
+  transition: .3s;
+  /* 过渡动画持续0.3秒 */
+}
+
+/* 页面内容样式 */
+.page_content {
+  box-sizing: border-box;
+  /* 盒模型设定为border-box */
+  height: 100%;
+  /* 高度为100% */
+  padding: 50px;
+  /* 内边距为50px */
+  color: #FFF;
+  /* 文字颜色为白色 */
+  position: absolute;
+  /* 绝对定位 */
+  left: 100%;
+  /* 左侧定位100% */
+  display: none;
+  /* 默认不显示 */
+  animation-name: fade;
+  /* 应用fade动画 */
+  animation-duration: .7s;
+  /* 动画持续时间0.7秒 */
+  animation-iteration-count: 1;
+  /* 动画播放一次 */
+  opacity: 1;
+  /* 不透明度为1 */
+}
+
+/* 定义fade动画 */
+@keyframes fade {
+  0% {
+    opacity: 0;
+    /* 初始不透明度为0 */
+  }
+
+  50% {
+    opacity: 0;
+    /* 中间不透明度为0 */
+    transform: translateY(-50px);
+    /* 向上移动50px */
+  }
+
+  100% {
+    opacity: 1;
+    /* 最终不透明度为1 */
+    transform: translateY(0px);
+    /* 回到原位置 */
+  }
+}
+
+/* 输入框样式 */
+input {
+  display: none;
+  /* 输入框不显示 */
+}
+
+/* 当输入框被选中时，对应的页面样式 */
+input:checked+.page {
+  transform: translateX(0px);
+  /* 页面移动到原始位置 */
+  transition: .4s;
+  /* 过渡动画持续0.4秒 */
+}
+
+/* 当输入框被选中时，页面内容显示样式 */
+input:checked+.page .page_content {
+  width: 100%;
+  /* 宽度为100% */
+  display: block;
+  /* 显示内容 */
+}
+
+/* 第三个页面的背景图片和内容样式 */
+.page:nth-child(3) {
+  background-image: url('../images/anime_llot/夏目志贵介绍.jpg');
+  /* 背景图片 */
+}
+
+.page:nth-child(3) .page_content {
+  background-color: rgb(185, 130, 130);
+  /* 背景颜色 */
+}
+
+/* 页面内容中的图片样式 */
+.page_content img {
+  float: right;
+  /* 图片浮动到右边 */
+  height: 85%;
+  /* 图片高度为85% */
+}
+
+/* 第九个页面的背景图片和内容样式 */
+.page:nth-child(9) {
+  background-image: url('../images/anime_llot/祖母介绍.jpg');
+  /* 背景图片 */
+}
+
+.page:nth-child(9) .page_content {
+  background-color: rgb(173, 170, 226);
+  /* 背景颜色 */
+}
+
+/* 第六个页面的背景图片和内容样式 */
+.page:nth-child(6) {
+  background-image: url('../images/anime_llot/猫咪老师介绍.jpg');
+  /* 背景图片 */
+}
+
+.page:nth-child(6) .page_content {
+  background-color: rgb(236, 180, 110);
+  /* 背景颜色 */
+}
+
+/* 第六个页面内容中的图片样式 */
+.page:nth-child(6) .page_content img {
+  height: 20%;
+  /* 图片高度为20% */
+  margin-top: 20%
+    /* 图片上边距为20% */
+}
+
+/* 页面标题样式 */
+.page h1 {
+  font-size: 68px;
+  /* 标题字体大小为68px */
+}
+
+/* 页面段落样式 */
+.page p {
+  width: 65%;
+  /* 段落宽度为65% */
+  font-size: 28px;
+  /* 字体大小为28px */
+  padding: 10px;
+  /* 内边距为10px */
+  background-color: rgba(0, 0, 0, .3);
+  /* 背景颜色，半透明黑色 */
+  border-radius: 10px;
+  /* 边角圆角半径为10px */
+  margin: 30px 0;
+  /* 外边距，上下30px，左右0 */
+}
+
+/* 页面内的 h5 标签样式 */
+.page h5 {
+  text-indent: 2em;
+  /* 首行缩进2个em单位 */
+  font-weight: normal;
+  /* 字体粗细为正常 */
+  font-size: 19px;
+  /* 字体大小为19像素 */
+  letter-spacing: 2px;
+  /* 字符间距为2像素 */
+  color: rgb(56, 56, 56);
+  /* 字体颜色为深灰色 */
+}
+
+/* 鼠标悬停在标签上时的样式 */
+label:hover {
+  cursor: pointer;
+  /* 鼠标样式变为指针，表示可点击 */
+  border-bottom: solid 4px rgb(35, 35, 35);
+  /* 底部边框为4像素实线，颜色为深色 */
+}

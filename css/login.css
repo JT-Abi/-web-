@@ -1,0 +1,137 @@
+* {
+  padding: 0; /* 所有元素的内边距设置为0 */
+  margin: 0; /* 所有元素的外边距设置为0 */
+  outline: none; /* 取消所有元素的轮廓线 */
+}
+
+/* 页面主体样式 */
+body {
+  background: linear-gradient(45deg, #fbda61, #ff5acd); /* 背景设置为45度线性渐变 */
+  display: flex; /* 使用弹性盒布局 */
+  justify-content: center; /* 水平居中内容 */
+  align-items: center; /* 垂直居中内容 */
+  height: 100vh; /* 高度设置为视口高度的100% */
+}
+
+/* shell 和 form 共同样式 */
+.shell, form {
+  position: relative; /* 相对定位 */
+}
+
+/* shell样式 */
+.shell {
+  display: flex; /* 使用弹性盒布局 */
+  justify-content: center; /* 水平居中内容 */
+}
+
+/* 表单样式 */
+form {
+  width: 562px; /* 宽度 */
+  height: 520px; /* 高度 */
+  background-color: #fff; /* 背景颜色为白色 */
+  box-shadow: 0px 15px 40px #b6354e; /* 阴影效果 */
+  border-radius: 15px; /* 边框圆角 */
+  display: flex; /* 使用弹性盒布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+/* 图片盒子样式 */
+#img-box {
+  width: 330px; /* 宽度 */
+  height: 520px; /* 高度 */
+}
+
+/* 图片盒子内图片的样式 */
+#img-box img {
+  height: 100%; /* 高度占满容器 */
+}
+
+/* 欢迎词区域样式 */
+#welcome-lines {
+  width: 100%; /* 宽度占满容器 */
+  text-align: center; /* 文字居中对齐 */
+  line-height: 1; /* 行高 */
+}
+
+/* 第一行欢迎词样式 */
+#w-line-1 {
+  color: #7f7f7f; /* 字体颜色 */
+  font-size: 50px; /* 字体大小 */
+}
+
+/* 第二行欢迎词样式 */
+#w-line-2 {
+  color: #9c9c9c; /* 字体颜色 */
+  font-size: 30px; /* 字体大小 */
+  margin-top: 17px; /* 顶部外边距 */
+}
+
+/* 输入区域样式 */
+#input-area {
+  width: 100%; /* 宽度占满容器 */
+  margin-top: 40px; /* 顶部外边距 */
+}
+
+/* 输入框样式 */
+.f-inp {
+  padding: 13px 25px; /* 内边距 */
+  border: 2px solid #6e6d6d; /* 边框 */
+  line-height: 1; /* 行高 */
+  border-radius: 20px; /* 圆角 */
+  margin-bottom: 15px; /* 底部外边距 */
+}
+
+/* 输入框内的input元素样式 */
+.f-inp input {
+  width: 100%; /* 宽度占满容器 */
+  font-size: 14px; /* 字体大小 */
+  padding: 0; /* 内边距 */
+  margin: 0; /* 外边距 */
+  border: 0; /* 无边框 */
+}
+
+/* 输入框内占位符的样式 */
+.f-inp input::placeholder {
+  color: #b9b9b9; /* 占位符字体颜色 */
+}
+
+/* 提交按钮容器样式 */
+#submit-button-cvr {
+  margin-top: 20px; /* 顶部外边距 */
+}
+
+/* 提交按钮样式 */
+#login-button {
+  display: block; /* 显示为块级元素 */
+  width: 100%; /* 宽度占满容器 */
+  color: #fff; /* 字体颜色为白色 */
+  font-size: 14px; /* 字体大小 */
+  margin: 0; /* 外边距 */
+  padding: 14px 40px; /* 内边距 */
+  border: 0; /* 无边框 */
+  background-color: #f5506e; /* 背景颜色 */
+  border-radius: 25px; /* 圆角 */
+  line-height: 1; /* 行高 */
+  cursor: pointer; /* 鼠标悬停时显示指针 */
+}
+
+/* 提交按钮容器样式 */
+#submit-button-cvr2 {
+  margin-top: 20px; /* 顶部外边距 */
+}
+
+/* 提交按钮样式 */
+#register-button{
+  display: block; /* 显示为块级元素 */
+  width: 100%; /* 宽度占满容器 */
+  color: #fff; /* 字体颜色为白色 */
+  font-size: 14px; /* 字体大小 */
+  margin: 0; /* 外边距 */
+  padding: 14px 40px; /* 内边距 */
+  border: 0; /* 无边框 */
+  background-color: #f5506e; /* 背景颜色 */
+  border-radius: 25px; /* 圆角 */
+  line-height: 1; /* 行高 */
+  cursor: pointer; /* 鼠标悬停时显示指针 */
+}
